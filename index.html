@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -49,9 +52,9 @@
                     <div class="mx-auto">
                         <div class="flex">
                             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="#" class="rounded-md px-3 py-3 text-sm font-medium text-indigo-600 "aria-current="
+                            <a href="#" class="rounded-md px-3 py-3 text-sm font-medium text-indigo-600 " aria-current="
                                 page">Home</a>
-                            <a href="#"
+                            <a href="#agenda"
                                 class="rounded-md px-3 py-3 text-sm font-medium text-black hover:text-indigo-600">Agenda</a>
                             <a href="#"
                                 class="rounded-md px-3 py-3 text-sm font-medium text-black  hover:text-indigo-600">Host</a>
@@ -65,13 +68,13 @@
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                     <button type="button"
                         class="relative rounded-lg bg-blue-600 px-5 py-2 text-white hover:text-white  ">
-                        
-                       Register Now
+
+                        Register Now
                     </button>
 
-                   
 
-                        <!--
+
+                    <!--
             Dropdown menu, show/hide based on menu state.
 
             Entering: "transition ease-out duration-100"
@@ -81,10 +84,10 @@
               From: "transform opacity-100 scale-100"
               To: "transform opacity-0 scale-95"
           -->
-                        
-                    </div>
+
                 </div>
             </div>
+        </div>
         </div>
 
         <!-- Mobile menu, show/hide based on menu state. -->
@@ -106,15 +109,54 @@
 
     <!--image section st here-->
 
-<div class=" content-center bg-gray-700  bg-[url('https://i.ibb.co/8Dw3HDN/conference.jpg')]  bg-contain  bg-center bg-no-repeat h-screen ">
+    <div
+        class="  bg-gray-700  bg-[url('https://i.ibb.co/8Dw3HDN/conference.jpg')]  bg-contain  bg-center bg-no-repeat bg-blend-multiply  h-screen ">
 
-    <h1 class="text-white font-bold  text-5xl text-center  font-sans  " >unleashing the power of web Development</h1>
-<p class="text-white mt-2 text-center" >join us for an exciting journey into the world of web development, where we believe in harnessing the boundless potential of innovation, technology and capital</p>
+        <div class="px-4 py-30 lg:pt-40 ">
+            <h1 class="  text-white font-extrabold  text-5xl text-center ">unleashing the power of web Development</h1>
+            <p class="text-white text-center mt-4 mx-4 px-56 ">join us for an exciting journey into the world of web
+                development, where we believe in harnessing the boundless potential of innovation, technology and
+                capital</p>
 
-<div class="mt-5  ">
-<button class="relative rounded-lg bg-blue-600 px-5 py-2 text-white hover:text-white  " >Book Your Spot Now </button>
- <span class=" ml-5 text-white border-2  p-2  rounded-lg " >Learn more</span> </div>
-</div>
+        </div>
+
+        <div class="flex justify-center py-5  ">
+            <button type="button" class="relative rounded-lg bg-blue-600 px-5 py-2 text-white hover:text-white  ">Book
+                Your Spot Now <i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
+            <button class=" ml-5 text-white border-2  p-2  hover:text-black hover:bg-white rounded-lg ">Learn
+                more</button>
+        </div>
+    </div>
+
+    <div id="agenda" class=" bg-gray-900 py-16">
+        <div class="container mx-auto text-center">
+          <h2 class="text-4xl text-white font-bold mb-4">What You Will Learn</h2>
+          <p class="text-gray-400 mb-16">Topics that will be covered in this webinar</p>
+    
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+           
+            <div class="bg-white rounded-lg shadow-lg max-w-xs mx-auto">
+              <img src="image/Complete handbook to Hire Front-end Developers - Codiant.jpeg" alt="Front-End Development" class="rounded mb-4">
+              <h3 class="text-xl font-semibold mb-2">Front-End Development</h3>
+              <p class="text-gray-400">HTML, CSS, JavaScript, and frameworks like React and Vue.js - Learn to craft stunning user interfaces and create responsive websites that leave a lasting impression.</p>
+            </div>
+    
+          
+            <div class="bg-white rounded-lg shadow-lg max-w-xs mx-auto">
+              <img src="image/What is a Back End_.jpeg" alt="Back-End Development" class="rounded mb-4">
+              <h3 class="text-xl font-semibold mb-2">Back-End Development</h3>
+              <p class="text-gray-400">Node.js, Python, MongoDB, MySQL, Express.js, and Django - Discover the magic of server-side programming and build scalable web applications.</p>
+            </div>
+    
+        
+            <div class="bg-white rounded-lg shadow-lg max-w-xs mx-auto">
+              <img src="image/e3061bdd-b0f0-42dc-a5a7-54fc35afc4cf.jpeg" alt="Full-Stack Development" class="rounded mb-4">
+              <h3 class="text-xl font-semibold mb-2">Becoming a Full-Stack Developer</h3>
+              <p class="text-gray-400">Front-end to back-end, APIs, development tools, and optimization - Elevate your coding skills and become a versatile web development maestro.</p>
+            </div>
+          </div>
+        </div>
+    </div>
 
 </body>
 
